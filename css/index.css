@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* .first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/index/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+} */
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main {
+  height: 100%;
+  position: relative;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #a08e73;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.first-view-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: #ebd5d6;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  background-color: #e4afa6;
+}
+
+.recommended {
+  background-color: #ebe9ed;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+.recommended h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.recommended h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #a08e73;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* overflow: scroll; */
+  overflow-x: scroll;
+}
+
+.item-list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.item-list::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.item-list::-webkit-scrollbar-thumb {
+  background-color: #a08e73;
+  border-radius: 8px;
+}
+
+.item-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 75px;
+}
+
+.item-list li:first-child {
+  margin-left: 0;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  /* .first-view {
+    height: calc(100vh - 50px);
+    background-image: url(../images/index/bg-main-sp.jpg);
+    align-items: flex-start;
+  } */
+
+  .first-view-text {
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .first-view-text p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lead p {
+    text-align: center;
+  }
+
+  .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-list li {
+    width: 220px;
+    margin-left: 30px;
+  }
+}
+
+/*==========================ふわっ===================*/
+
+/* fadeUp */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定 */
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+/*==========================ふわっ===================*/
