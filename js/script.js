@@ -33,5 +33,5 @@ $(document).ready(function () {
 // メインビジュアルのスライドショー
 $(".slide-items").slick({
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 4000,
 });
