@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.first-view {
+  position: relative;
+}
+
 .first-view-text {
   width: 100%;
   max-width: 1200px;
@@ -36,9 +40,10 @@
   text-shadow: 1px 1px 10px #a08e73;
   position: absolute;
   z-index: 10;
-  top: 0;
+  top: 50%;
   left: 0;
   right: 0;
+  transform: translateY(-50%);
   padding-top: 30px;
   padding-bottom: 50px;
 }
